@@ -1,0 +1,264 @@
+a
+{
+    text-decoration: none;
+    display        : block;
+    color          : white;
+}
+.show 
+{
+    width     : 100%;
+    height    : 600px;
+    background-image: url('../img/air_balloons_mountains_flight_126019_1920x1080.jpg');
+    position  : relative;
+}
+.show .ps
+{
+    width   : 500px;
+    height  : 300px;
+    position: absolute;
+    left    : 35%;
+    top     : 30%;
+    color   : white;
+    border  : 1px solid white;
+}
+.show .ps p
+{
+    line-height: 3;
+}
+.show .ps .byNow
+{   
+    color      : white;
+    padding-top: 5px;
+    margin-left: 20%;
+    margin-top : 20px;
+    width      : 25%;
+    height     : 30px;
+    background : green;
+    text-align : center;
+    display    : inline-block;
+}
+.show .ps .takeATour
+{
+    color      : white;
+    padding-top: 5px;
+    margin-left: 10%;
+    margin-top : 20px;
+    width      : 25%;
+    height     : 30px;
+    background : transparent;
+    border     : 0.3px solid white;
+    text-align : center;
+    display    : inline-block;
+}
+
+/*.show .dotBottom
+{
+    
+    height  : 50px;
+    width   : 150px;
+    bottom  : 2px;
+    left    : 48%;
+    border  : 1px solid black;
+    position: absolute;
+   
+}*/
+.dot
+{   
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    background-color: #bbb;
+    border-radius: 50%;
+    left:50%;
+    bottom: 2%;
+    display: inline-block;
+    position: absolute;
+}
+.active,.dot:hover {
+  background-color: green;
+}
+.next
+{
+    color    : white;
+    position : absolute;
+    top      : 50%;
+    right    : 2%;
+    font-size: 30px;
+
+}
+.next:hover
+{
+    opacity: 0.7;
+}
+.back
+{
+    color    : white;
+    position : absolute;
+    top      : 50%;
+    left     : 2%;
+    font-size: 30px;
+}
+.back:hover
+{
+    opacity: 0.7;
+}
+.feature
+{
+    height: 200px;
+    width: 100%;
+    
+
+}
+.feature .partLike, .partResponsive, .partCustomize
+{   
+    margin-left: 2.5%;
+    width: 30%;
+    height: 100%;
+    
+    display: inline-block;
+}
+ .partLike .pimg
+{   
+    height: 100%;
+    width: 30%;
+   
+    display: inline-block;
+    position: relative;
+}
+.partLike .pimg img
+{   
+    
+    right: 2px;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+}
+.partLike .content 
+{
+    width: 68%;
+    height: 100%;
+    
+    display: inline-block;
+    position: relative;
+}
+.content p
+{
+    position: absolute;
+    top:32px;
+}
+/*partResponsive*/
+ .partResponsive .pimg
+{   
+    height: 100%;
+    width: 30%;
+    
+    display: inline-block;
+    position: relative;
+}
+.partResponsive .pimg img
+{   
+    
+    right: 2px;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+}
+.partResponsive .content 
+{
+    width: 68%;
+    height: 100%;
+    
+    display: inline-block;
+    position: relative;
+}
+/*partCustomize*/
+ .partCustomize .pimg
+{   
+    height: 100%;
+    width: 30%;
+    
+    display: inline-block;
+    position: relative;
+}
+.partCustomize .pimg img
+{   
+    
+    right: 2px;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+}
+.partCustomize .content 
+{
+    width: 68%;
+    height: 100%;
+    
+    display: inline-block;
+    position: relative;
+}
+.view
+{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-color: #FAFAFA;
+}
+.view .slideShow
+{
+    width: 45%;
+    height: 90%;
+    top:6%;
+    left:5%;
+    display: inline-block;
+    position: absolute;
+    border-radius: 2px;
+}
+
+.slideShow nav
+{
+    height: 10%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.slideShow img
+{
+    width: 100%;
+    height: 90%;
+    
+    border-radius: 2px;
+}
+.view .contentShow
+{   
+    margin-top: 1.7%;
+    margin-left: 53%;
+    height: 90%;
+    width: 40%; 
+    display: inline-block;
+}
+.contentShow li
+{
+    opacity: 0.6;
+}
+.contentShow ul
+{
+    margin-top: 20px;
+
+}
+button
+{   
+    cursor: pointer;
+    margin-left: 25px;
+    color: white;
+    width: 100px;
+    height: 40px;
+    background-color: green;
+    border-radius: 5px;
+    border:none;
+}
+button:hover
+{
+    opacity: 0.9;
+}
+
+
