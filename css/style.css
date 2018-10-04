@@ -21,13 +21,20 @@ body
     color      : gray;
 }
 .nav
-{
+{   
     width : 100%;
     height: 100px;
 }
 .nav .content
-{
-    height:70%; 
+{   
+    z-index: 3;
+
+    position: fixed;
+    
+    width: 100%;
+    height:70px;
+    /*background-color: white;*/
+
 }
 .nav .info
 {   
@@ -52,11 +59,11 @@ body
 }
 .nav .content .part2
 {   
-
+    
     padding-top: 20px;
     float      : right;
-    height     : 100%;
-    width      : 45%;
+    height     : 70px;
+    width      : 50%;
 }
 .nav .content .part1 span
 {  

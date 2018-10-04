@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/body.css">
     <link rel="stylesheet" type="text/css" href="css/client.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -32,12 +33,14 @@
                     <span>Made</span>
                 </div>
                 <div class="part2">
-                    <span>Home</span>
-                    <span>About</span>
-                    <span>Service</span>
-                    <span>Portfolio</span>
-                    <span>Blog</span>
-                    <span>Contact</span>
+                    <span><a href="" style="color: black">Home</a></span>
+                    <span><a onclick="About()" style="color: black">About</a></span>
+                    <span><a onclick="Service()" style="color: black">Service</a></span>
+                    <span><a style="color: black">Portfolio</a></span>
+                    <span><a onclick="blog()" style="color: black">Blog</a></span>
+                    <span><a onclick="Contact()"style="color: black">Contact</a></span>
+                    <a href="" style="margin-left:5%" ><i class="fa fa-search icon2"></i></a>
+                    
                 </div>
             </div>
         </div>
@@ -47,8 +50,8 @@
                 <p style   ="text-align: center;">Welcome to <b>Made</b></p>
                 <p style   ="margin-left: 100px;font-size: 25px;"><b>We do business all of time</b></p>
                 <p style   ="margin-left: 130px;">- We creat a <b>CONCEPT</b> into the market -</p>
-                <div class ="byNow" ><a href="">By Now</a></div>
-                <div class ="takeATour"><a href="">Take a tour</a></div>
+                <button style="margin-left: 20%;margin-top: 7%;">By Now</button>
+                <button style="background-color: transparent;border: 1px solid white; margin-left:25%;">Take a Tour</button>
             </div>
             
             <div style="text-align: center;">
@@ -61,7 +64,7 @@
             <span class="back"><a href=""><</a></span>
         </div>
         <!-- Feature -->
-        <div class="feature">
+        <div class="feature" id="service">
             <div class="partLike">
                 <div class="pimg" >
                     <img src="img/mai.png">
@@ -90,7 +93,7 @@
                 </div>     
             </div>
         </div>
-        <div class="view">
+        <div class="view" id="blog">
             <div class="slideShow">
                 <nav>
                     <span class="dot active" style="position: absolute; left: 10px;top:5px"></span>
@@ -110,8 +113,8 @@
                     <li>Google Fonts</li>
                 </ul>
                 <p style=" margin:25px 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis</p>
-                <button>Read More</button>
-                <button>By Now</button>
+                <button style="margin-left: 5%;">Read More</button>
+                <button style="margin-left: 5%;">By Now</button>
             </div>
         </div>
         <div class="client">
@@ -143,11 +146,11 @@
                     <p style="margin-top: 10px;">- Graphic desgin </p>
                 </div>
                
-                <a href=""><span class="back" style="font-size: 50px;color: black; left: 1%;top:30%"><</span></a>    
-                <a href=""><span class="back" style="font-size: 50px;color: black; left: 97.5%;top:30%">></span></a>
+                <a href=""><span class="back" style="font-size: 50px;color: black; left: 1%;top:25%"><</span></a>    
+                <a href=""><span class="back" style="font-size: 50px;color: black; left: 97.5%;top:25%">></span></a>
             </div>
         </div>
-        <div class="clientAvatar">
+        <div class="clientAvatar" id="Author">
             <p style="font-weight: bold;font-size: 25px;margin-top: 20px;text-align: center;">WHAT CLIENT SAY</p>
             <p style="margin-top:10px;opacity: 0.8;text-align: center;">Clean and Modern design is our best specialist</p>
             <div class="author1">
@@ -172,12 +175,169 @@
                     </span>
                 </div>
                 <div class="contentAvatar">
-                    <p style="font-size: 25px;">Nguyen Dat</p>
+                    <p style="font-size: 25px;">Zayn Malik</p>
                     <p style="font-size: 15px;margin-top: 40px;">Facebook.com</p>
                     <p style="font-size: 15px;margin-top: 80px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis </p>
                 </div>
             </div>
         </div>
+        <div class="Resolution">
+           
+            <button class="px" style="width:100px;margin: 3% 1% ">100x100</button>
+            <button class="px" style="width:120px;margin: 3% 1% ">100x120</button>
+            <button class="px" style="width:140px;margin: 3% 1% ">100x140</button>
+            <button class="px" style="width:160px;margin: 3% 1%">100x160</button>
+            <button class="px" style="width:180px;margin: 3% 1% ">100x180</button>
+            <button class="px" style="width:200px;margin: 3% 1% ">100x200</button>
+            
+        </div>
+        <div class="Notification">
+            <p>YOUR PROMOTION TEXT WILL BE HERE</p>
+            <button>Purcharsing Now</button>
+        </div>
+        <footer id="Contact">
+            <div class="part" style="margin-left:6%; ">
+                
+                   <p style="font-size: 25px;">About us</p>
+                   <p style="font-size: 15px;margin-top: 10px;opacity: 0.8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis</p>
+                    <div class="content">
+                        <div class="location">
+                            <div class="icon">
+                                <i class="fa fa-bell"></i>
+                            </div>
+                            <div class="text">
+                                <p>Location</p>
+                                <p style="margin-top: 20px;font-size: small;">consectetur adipiscing elit. Praesent vitae eros eget tellus </p>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="text">
+                                <p>Call us</p>
+                                <p style="margin-top: 20px;font-size: small;">01659 501 670 </p>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="icon">
+                                <i class="fa fa-mail-forward"></i>
+                            </div>
+                            <div class="text">
+                                <p>Email address</p>
+                                <p style="margin-top: 20px;font-size: small;">Datnv1997@gmail.com </p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+
+            <div class="part" >
+                    <div class="LastNews">
+                        <p style="font-size: 25px;">Last News</p>
+                    </div>
+                    <div class="video">
+                        <div class="p1">
+                            <div class="clip">
+                                <img src="img/zayn.jpg">
+                            </div>
+                            <div class="description">
+                                <p>Twitter</p>
+                                <p style="margin-top: 30px;">30/10/1997</p>
+                            </div>
+                        </div>
+
+                        <div class="p1">
+                            <div class="clip">
+                                <img src="img/zayn.jpg">
+                            </div>
+                            <div class="description">
+                                <p>YouTube</p>
+                                <p style="margin-top: 30px;">30/10/1997</p>
+                            </div>
+                        </div>
+
+                        <div class="p1">
+                            <div class="clip">
+                                <img src="img/zayn.jpg">
+                            </div>
+                            <div class="description">
+                                <p>Facebook</p>
+                                <p style="margin-top: 30px;">30/10/1997</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+            </div>
+
+            <div class="FeatureWeb">
+                <p style="font-size: 25px;">
+                    Latest News
+                </p><br>
+                <span>> Web Design</span><br>
+                <span>...........................................................</span>
+                <br><br>
+                <span>> User interface Design</span><br>
+                <span>...........................................................</span>
+                <br><br>
+                <span>> E-Commerce</span><br>
+                <span>...........................................................</span>
+                <br><br>
+                <span>> Web Hosting</span><br>
+                <span>...........................................................</span>
+                <br><br>
+                <span>> Themes</span><br>
+                <span>...........................................................</span>
+                <br>
+                <br>
+                <br>
+                <span>> Support Forum</span>
+            </div>
+            
+            <div class="FeedBack">
+                <p style="font-size: 25px;opacity: 1">NewsLetter</p>
+                <form >
+                    <input type="txt" name="" placeholder="Enter your email" >
+                    <button type="submit" style="border-radius: 0;border: 1px solid grey;float:left;margin-top: 22px;width: 30%; border-left: none;"><i class="fa fa-forward" ></i></button>
+                </form>
+                <br><br><br><br><br><br>
+                <p style="font-size:40px;opacity: 1">Your Logo</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. </p>
+                <br><br>
+                <i class="fa fa-facebook "></i>
+                <i class="fa fa-twitter "></i>
+                <i class="fa fa-linkedin "></i>
+                <i class="fa fa-gamepad "></i>
+                <i class="fa fa-bell "></i>
+            </div>
+       </footer>
+        <script type="text/javascript">
+            function About()
+            {
+                var elmnt = document.getElementById("Author");
+                var topos= elmnt.offsetTop;
+                window.scrollTo(0, topos);
+            }
+            function Contact()
+            {
+                var elmnt = document.getElementById("Contact");
+                var topos= elmnt.offsetTop;
+                window.scrollTo(0, topos);
+            }
+            function Service()
+            {
+                var elmnt = document.getElementById("service");
+                var topos= elmnt.offsetTop;
+                window.scrollTo(0, topos);
+            }
+            function blog()
+            {
+                var elmnt = document.getElementById("blog");
+                var topos= elmnt.offsetTop;
+                window.scrollTo(0, topos);
+            }
+        </script>
     </div>
 </body>
 </html>
