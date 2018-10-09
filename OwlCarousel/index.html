@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Owl Carousel - Tinh Yeu Cong Nghe.Net</title>
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+
+		<style>
+			.owl-theme .owl-nav [class*=owl-] {
+				background: transparent;
+			}
+
+			.owl-theme .owl-nav {
+				position: relative;
+				
+			}
+
+			.owl-prev {
+				position: absolute;
+					left: -50px;
+			}
+
+			.owl-next {
+				position: absolute;
+					right: -50px;
+			}
+
+			/*.owl-theme .owl-dots .owl-dot.active span {
+				background: #e09422;
+			    width: 30px;
+			    transition: all 0.5s;
+			}
+
+			.owl-theme .owl-dots .owl-dot span {
+				background: #e09422;
+			}*/
+
+		</style>
+
+	</head>
+	<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<br><br>
+				<div class="owl-carousel owl-theme">
+				    <div class="item"><img src="img/css.png" alt=""></div>
+				    <div class="item"><img src="img/html.png" alt=""></div>
+				    <div class="item"><img src="img/javascript.png" alt=""></div>
+				    <div class="item"><img src="img/jpg.png" alt=""></div>
+				    <div class="item"><img src="img/mp3.png" alt=""></div>
+				    <div class="item"><img src="img/png.png" alt=""></div>
+				    <div class="item"><img src="img/xml.png" alt=""></div>
+				    <div class="item"><img src="img/zip.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+
+		<script>
+			$('.owl-carousel').owlCarousel({
+			    loop:true,
+			    margin:10,
+			    nav:true,
+			    navText: ["<img src='img/icon/prev.png'>","<img src='img/icon/next.png'>"],
+			    responsive:{
+			        0:{
+			            items:1
+			        },
+			        600:{
+			            items:3
+			        },
+			        1000:{
+			            items:5
+			        }
+			    }
+			})
+		</script>
+
+	</body>
+</html>
