@@ -57,53 +57,66 @@
        
         .feature
         {
-            height: 200px;
+            min-height: 200px;
            
         }
         .purcharsing
         {
-            height: 370px;
+            min-height: 370px;
             border: 1px solid #f2f2f2;
         }
         .client
         {
-            height: 400px;
+            min-height: 400px;
            
         }
         .item img
         {
-            max-height: 280px;
+            min-height: 280px;
         }
         .client-avatar
         {
-            height: 250px;
+            min-height: 250px;
             border: 1px solid #f2f2f2;
         }
         .resolution
         {
-            height: 90px;
+            min-height: 90px;
            
         }
         .promotion
         {
-            height: 60px;
+            min-height: 60px;
         }
         footer
         {
-            height: 500px;
-            border:1px solid black;
+            min-height: 500px;
+            
+        }
+        input[type=text] {
+              padding: 10px;
+              font-size: 11px;
+              border: 1px solid grey;
+              float: left;
+              width: 80%;
+              background: #f1f1f1;
+        }
+        @media only screen and (max-width: 320px) {
+           
+            
+            
         }
     </style>
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row  bg-light ">
-            <div class="col-md-6 ">
+        <div class="row  bg-light  ">
+            <div class="col-md-6 d-none d-lg-block">
                 <i class="fa fa-facebook icon"> Contact us</i>
                 <i class="fa fa-twitter icon"> Call us:01659501670</i>                
             </div>
 
-            <div class="col-md-6 pt-1 " >
+            <div class="col-md-6  d-none d-lg-block" >
                 <i class="fa fa-facebook icon float-right"></i>
                 <i class="fa fa-twitter icon float-right"></i>
                 <i class="fa fa-linkedin icon float-right"></i>
@@ -111,12 +124,12 @@
                 <i class="fa fa-bell icon float-right"></i>
             </div>
         </div>
-        <div class="row">            
+        <div class="row sticky-top bg-white">            
             <div class="col-md-6 ">
-                <a href="" style="text-decoration: none;"><h2 class="text-success">MADE</h2></a>
+                <a href="" style="text-decoration: none;"><h1 class="text-success">MADE</h1></a>
             </div>
 
-            <div class="col-md-6 pt-1">
+            <div class="col-md-6 ">
                 <ul class="nav justify-content-end">
                     <li class="nav-item ">
                         <a class="nav-link active" href="#">Home</a>
@@ -177,19 +190,19 @@
         <div class="feature ">
             <div class="row w-100 h-100">
 
-                <div class="col-md-4" >
+                <div class="col-md-4 col-sm-4 col-12" >
                     <div class="row">                        
-                        <div class="col-md-4  " >
-                            <img src="img/mai.png" >
+                        <div class="col-md-4 col-sm-4 col-12 " >
+                            <img src="img/mai.png "  >
                         </div>
                         <div class="col-md-8 " >                            
-                            <br><h3 >Email</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis</p>
+                            <br><h3>Email</h3>
+                            <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4" >
+                <div class="col-md-4 col-sm-4 col-12" >
                     <div class="row">                        
                         <div class="col-md-4  " >
                             <img src="img/phone_link.png" >
@@ -201,9 +214,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-4" >
+                <div class="col-sm-4 col-12" >
                     <div class="row">                        
-                        <div class="col-md-4  " >
+                        <div class="col-md-4   " >
                             <img src="img/link.png" >
                         </div>
                         <div class="col-md-8 " >                            
@@ -294,8 +307,8 @@
                             <img class=" rounded-circle" src="img/zayn1.jpg" height="100%" width="100%;">
                         </div>
                         <div class="col-md-9">
-                            <h3>Zayn Malik</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis</p>
+                            <h3 class="text-center">Zayn Malik</h3>
+                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis</p>
                         </div>
                     </div>
                 </div>
@@ -306,8 +319,8 @@
                             <img class=" rounded-circle" src="img/zayn1.jpg" height="100%" width="100%;">
                         </div>
                         <div class="col-md-9">
-                            <h3>Zayn Malik</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis</p>
+                            <h3 class="text-center">Zayn Malik</h3>
+                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis</p>
                         </div>
                     </div>
                 </div>
@@ -338,8 +351,8 @@
         <footer class="bg-dark text-white">
             <div class="row mt-5">
                 <div class="col-md-3">
-                    <h3>About Us</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis</p>
+                    <h3 class="ml-3">About Us</h3>
+                    <p class="ml-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis</p>
                     <div class="row">
                         <div class="col-md-3 pt-1 pl-5">
                             <i class="fa fa-bell m-auto mt-5"></i>
@@ -369,13 +382,57 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <h3>Lastest New</h3>
-                </div>
-                <div class="col-md-3">
+                    <h3>Lastest New</h3><br><br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/cat.jpg" height="100%" width="100%">
+                        </div>
+                        <div class="col-md-8">
+                            <p style="font-size: 20px;">Google</p>
+                            <span>Cách làm giàu</span>
+                        </div>
+                    </div><br><br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/cat.jpg" height="100%" width="100%">
+                        </div>
+                        <div class="col-md-8">
+                            <p style="font-size: 20px;">Youtube</p>
+                            <span>Cách làm giàu</span>
+                        </div>
+                    </div><br><br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/cat.jpg" height="100%" width="100%">
+                        </div>
+                        <div class="col-md-8">
+                            <p style="font-size: 20px;">Facebook</p>
+                            <span>Cách làm giàu</span>
+                        </div>
+                    </div>  
+                        
                     
                 </div>
                 <div class="col-md-3">
-                    
+                    <h3>Lastest News</h3><br><br>
+                    <p>> Web design</p>
+                    <span>----------------------------------</span>
+                    <p>> User interface design</p>
+                    <span>----------------------------------</span>
+                    <p>> E-commerce</p>
+                    <span>----------------------------------</span>
+                    <p>> Web hosting</p>
+                    <span>----------------------------------</span>
+                </div>
+                <div class="col-md-3">
+                    <h3>NewsLetter</h3><br><br>
+                    <form class="example" action="action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"  class="btn btn-info" style="float: left;"><i class="fa fa-search"></i></button>
+                    </form>
+                    <br><br><br>
+                    <p style="font-size: 30px; font-weight: bold;">Your Logo</p><br>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis</span>
                 </div>
             </div>
         </footer>
